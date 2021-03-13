@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
 function initDB(){
-    if (mongoose.connections[0].readystate) {
+    if (mongoose.connections[0].readystate){
         console.log("already connection")
         return
     }
